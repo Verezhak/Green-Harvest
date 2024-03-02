@@ -1,3 +1,10 @@
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+/* body {
+  color: var(--light-text-color);
+  font-family: Inter-tight, sans-serif;
+} */
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -41,6 +48,18 @@ p {
 img {
   display: block;
   max-width: 100%;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .sas {
   background: linear-gradient(
@@ -125,7 +144,6 @@ img {
 
 .section-title {
   color: #fbfbfb;
-  font-family: "Inter Tight";
   font-size: 48px;
   font-weight: 600;
   line-height: 1.04;
@@ -139,7 +157,6 @@ img {
 }
 .vegetables-section-text {
   color: #fbfbfb;
-  font-family: "Inter Tight";
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
@@ -155,27 +172,27 @@ img {
   flex-direction: column;
   align-items: flex-start;
   padding: 32px 26px;
-  gap: 14px;
   border-radius: 40px;
   background-color: #fbfbfb;
   max-width: 334px;
 }
 .vegetables-subtitle {
   color: #7a3145;
-  font-family: "Inter Tight";
+
   font-size: 28px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.42px;
+  margin-bottom: 12px;
 }
 .vegetables-text {
   color: #141414;
-  font-family: "Inter Tight";
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28;
   letter-spacing: -0.21px;
   text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -200,6 +217,12 @@ img {
     row-gap: 28px;
     column-gap: 20px;
   }
+  .vegetables-subtitle {
+    font-size: 32px;
+    letter-spacing: -0.48px;
+  }
+  .vegetables-text {
+  }
 }
 @media screen and (min-width: 1280px) {
   .vegetables-item {
@@ -212,5 +235,156 @@ img {
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .section-title {
     font-size: 42px;
+  }
+}
+
+.discount-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fbfbfb;
+}
+.discount {
+  display: flex;
+  justify-content: center;
+}
+.discount-text {
+  color: #141414;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+  max-width: 335px;
+}
+.discount-span {
+  position: relative;
+  display: flex;
+  color: #fbfbfb;
+  z-index: 1;
+}
+
+.discount-span::before {
+  content: "";
+  position: absolute;
+  background-color: #576f35;
+  border-radius: 12px;
+  width: 355px;
+  height: 102px;
+  z-index: -1;
+  left: -10px;
+  top: -3px;
+}
+
+@media screen and (min-width: 768px) {
+  .discount-span {
+    display: inherit;
+  }
+  .discount-text {
+    font-size: 64px;
+    line-height: 1.09;
+    letter-spacing: -0.96px;
+    max-width: 708px;
+  }
+  .discount {
+    padding: 0 16px;
+  }
+  .discount-span::before {
+    width: 736px;
+    height: 82px;
+    z-index: -1;
+    left: -16px;
+    top: -8px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .discount-span {
+    display: inline;
+  }
+  .discount-text {
+    font-size: 74px;
+    line-height: 1.05;
+    letter-spacing: -1.14px;
+    max-width: 1054px;
+  }
+  .discount-span::before {
+    width: 828px;
+    left: -13px;
+    top: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .discount-span {
+    width: 300px;
+  }
+  .discount-span::before {
+    width: 300px;
+  }
+}
+
+.discount-div {
+  padding: 80px 0;
+  width: 355px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.dis-p {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+.span-p {
+  color: #fbfbfb;
+  border-radius: 12px;
+  background: #576f35;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .discount-div {
+    padding: 100px 0;
+    width: 768px;
+  }
+
+  .dis-p {
+    font-size: 64px;
+    line-height: 1.09;
+    letter-spacing: -0.015em;
+    width: 704px;
+  }
+  .span-p {
+    display: inherit;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .discount-div {
+    padding: 100px 0;
+    width: 1280px;
+  }
+
+  .dis-p {
+    font-size: 74px;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    width: 1054px;
+  }
+  .span-p {
+    display: inline;
   }
 }
