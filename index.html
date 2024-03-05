@@ -295,7 +295,7 @@
         </div>
       </section>
       <section class="covered" id="covered">
-        <div class="covered-container container">
+        <div class="container">
           <h2 class="covered-title">
             Fresh <span>Harvest</span> Box has got you covered
           </h2>
@@ -305,79 +305,100 @@
             your box today and start enjoying the best that nature has to offer!
           </p>
           <div>
-            <div class="form-container">
-              <p class="form-title">
-                Ordering <span class="from-us">from us</span> is quick and easy!
-                Fill out <span class="the-form">the form</span> below and we
-                will contact you!
-              </p>
-              <form class="form">
-                <label>
-                  <input class="input" type="text" placeholder="Full Name" />
-                </label>
-                <label>
-                  <input class="input" type="email" placeholder="Email" />
-                </label>
-                <label for="">
-                  <textarea class="textarea" placeholder="Comment"></textarea>
-                </label>
-              </form>
-              <button class="btn-form" type="submit">Send</button>
-            </div>
-            <div class="covered-soc-container">
-              <div class="con-img">
-                <picture>
-                  <source
-                    media="(max-width:767px)"
-                    srcset="
-                      ./images/form-mob.jpg    1x,
-                      ./images/form-mob@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(max-width:1279px)"
-                    srcset="
-                      ./images/form-tab.jpg    1x,
-                      ./images/form-tab@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width:1280px)"
-                    srcset="
-                      ./images/form-des.jpg    1x,
-                      ./images/form-des@2x.jpg 2x
-                    "
-                  />
-                  <img
-                    class="covered-img"
-                    srcset="
-                      ./images/form-tab.jpg    1x,
-                      ./images/form-tab@2x.jpg 2x
-                    "
-                    src="./images/form-tab.jpg"
-                    alt=""
-                  />
-                </picture>
-                <span class="shadow-form"></span>
+            <div class="covered-container">
+              <div class="form-container">
+                <p class="form-title">
+                  Ordering <span class="from-us">from us</span> is quick and
+                  easy! Fill out <span class="the-form">the form</span> below
+                  and we will contact you!
+                </p>
+                <form class="form">
+                  <label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="username"
+                      placeholder="Full Name"
+                  /></label>
+                  <label class="inp-wrp">
+                    <input
+                      class="input inp"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                      required=""
+                    />
+                    <p class="text-valid">Succes!</p>
+                    <p class="text-invalid">Invalid email, try again</p>
+                  </label>
+                  <label>
+                    <textarea class="textarea" placeholder="Comment"></textarea>
+                  </label>
+                </form>
+                <button class="btn-form" type="submit">Send</button>
               </div>
-              <p class="covered-soc-text">Follow us on our social networks:</p>
-              <ul class="soc-list">
-                <li class="soc-item">
-                  <a class="soc-link" href="https://www.instagram.com/goitclub/"
-                    >instagram<span>&#47;</span></a
-                  >
-                </li>
-                <li class="soc-item">
-                  <a class="soc-link" href="https://www.facebook.com/goITclub/"
-                    >facebook<span>&#47;</span></a
-                  >
-                </li>
-                <li class="soc-item">
-                  <a class="soc-link" href="https://www.youtube.com/c/GoIT"
-                    >youtube</a
-                  >
-                </li>
-              </ul>
+              <div class="covered-soc-container">
+                <div class="con-img">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/form-mob.jpg    1x,
+                        ./images/form-mob@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width:1279px)"
+                      srcset="
+                        ./images/form-tab.jpg    1x,
+                        ./images/form-tab@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1280px)"
+                      srcset="
+                        ./images/form-des.jpg    1x,
+                        ./images/form-des@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="covered-img"
+                      srcset="
+                        ./images/form-tab.jpg    1x,
+                        ./images/form-tab@2x.jpg 2x
+                      "
+                      src="./images/form-tab.jpg"
+                      alt=""
+                    />
+                  </picture>
+                  <span class="shadow-form"></span>
+                </div>
+                <p class="covered-soc-text">
+                  Follow us on our social networks:
+                </p>
+                <ul class="soc-list">
+                  <li class="soc-item">
+                    <a
+                      class="soc-link"
+                      href="https://www.instagram.com/goitclub/"
+                      >instagram<span>&#47;</span></a
+                    >
+                  </li>
+                  <li class="soc-item">
+                    <a
+                      class="soc-link"
+                      href="https://www.facebook.com/goITclub/"
+                      >facebook<span>&#47;</span></a
+                    >
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-link" href="https://www.youtube.com/c/GoIT"
+                      >youtube</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
