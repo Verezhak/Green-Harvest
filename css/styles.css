@@ -654,8 +654,10 @@ img {
   }
   .work-container {
     flex-direction: row;
+    /* justify-content: center; */
   }
   .shadow {
+    /* max-width: 630px; */
     padding: 100px 100px 100px 0;
   }
   .how-it-works {
@@ -1103,7 +1105,7 @@ img {
   position: relative;
   border-radius: 15px;
 }
-.shadow {
+.shadow-form {
   display: flex;
   position: absolute;
   top: 0;
