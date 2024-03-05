@@ -192,7 +192,7 @@ img {
   flex-direction: column;
   align-items: center;
   background-color: var(--red-background);
-  max-width: 351px;
+  max-width: 375px;
   height: 100%;
   padding: 240px 0 40px;
 }
@@ -305,6 +305,7 @@ img {
   }
 
   .menu-mobile {
+    width: 351px;
     padding: 360px 0 50px;
   }
 }
