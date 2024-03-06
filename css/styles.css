@@ -296,7 +296,7 @@ img {
 @media screen and (min-width: 768px) {
   .top {
     padding-top: 32px;
-    background-color: rgb(87, 111, 53, 0.8);
+    /* background-color: rgb(87, 111, 53, 0.8); */
   }
 
   .icon-burger {
@@ -1370,16 +1370,6 @@ textarea:focus {
   gap: 4px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-link-footer:hover .logo-icon,
-.logo-linr-footer:hover .logo-text,
-.logo-link-footer:focus .logo-icon,
-.logo-link-footer:focus .logo-text {
-  fill: var(--red-background);
-}
-.logo-link-footer:hover {
-  background-color: var(--light-text-color);
-  border-radius: 13px;
-}
 
 .logo-icon,
 .logo-text {
@@ -1454,8 +1444,6 @@ textarea:focus {
 .footer-add:focus {
   background-color: var(--light-text-color);
   color: var(--red-background);
-  padding: 0 5px;
-
   border-radius: 12px;
 }
 
@@ -1542,7 +1530,8 @@ textarea:focus {
     letter-spacing: -0.27px;
   }
 
-  .footer-bottom-item {
+  .footer-bottom-link,
+  .footer-bottom-text {
     font-size: 18px;
     line-height: 1.1;
     letter-spacing: -0.27px;
@@ -1552,10 +1541,18 @@ textarea:focus {
 @media screen and (min-width: 1280px) {
   .nav-add {
     flex-direction: row;
-    /* gap: 121px; */
     gap: unset;
     margin-bottom: 125px;
     justify-content: space-between;
     width: 513px;
   }
 }
+/* ===================hed================ */
+
+/* ================fot===================== */
+
+/* =========================fh============= */
+
+/* =====================v======================== */
+
+/* =======================================vh================ */

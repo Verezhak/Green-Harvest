@@ -1,30 +1,39 @@
 
+document.addEventListener('DOMContentLoaded', function () {
+  const links = document.querySelectorAll('.menu-link, .button-menu-mobile');
+  const backdrop = document.querySelector('.backdrop');
+  const menuMobile = document.querySelector('.menu-mobile');
+  const menuButton = document.querySelector('.btn-menu');
+  links.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      menuMobile.classList.remove('is-open');
+      backdrop.classList.remove('is-open');
+    });
+  });
+  menuButton.addEventListener('click', function () {
+    const isOpen = menuMobile.classList.contains('is-open');
+    if (isOpen) {
+      menuMobile.classList.remove('is-open');
+      backdrop.classList.remove('is-open');
+    } else {
+      menuMobile.classList.add('is-open');
+      backdrop.classList.add('is-open');
+    }
+  });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const header = document.querySelector('.top');
-//     const sectionWork = document.querySelector('.section-work');
-    
-//     window.addEventListener('scroll', function() {
-//         if (window.scrollY >= sectionWork.offsetTop) {
-//             header.style.backgroundColor = '#576f35'; // Змінюємо фон хедера на зелений
-//             header.style.opacity = '1'; // Змінюємо прозорість хедера на повністю непрозору
-//         } else {
-//             header.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; // Прозорий фон хедера
-//             header.style.opacity = '0.8'; // Прозорість хедера
-//         }
-//     });
-// });
+    const header = document.querySelector('.top');
+    const sectionWork = document.querySelector('.section-work');
 
-//     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
+    function handleHeaderStyle() {
+        if (window.innerWidth <= 1279) {
+            header.style.backgroundColor = 'rgba(87, 111, 53, 0.8)';
+        } else if (window.scrollY >= sectionWork.offsetTop) {
+            header.style.backgroundColor = 'rgba(87, 111, 53, 0.8)'; 
+        } else {
+            header.style.backgroundColor = 'transparent';
+        }
+    }
 
-//         const target = document.querySelector(this.getAttribute('href'));
-
-//         window.scrollTo({
-//             top: target.offsetTop,
-//             behavior: 'smooth'
-//         });
-//     });
-// });
-
+    window.addEventListener('scroll', handleHeaderStyle);
+    window.addEventListener('resize', handleHeaderStyle);
+  });
