@@ -1131,7 +1131,7 @@ img {
 .span-form::after {
   position: absolute;
   left: 16px;
-  content: "Invalid email, try again";
+  content: "Invalid data, try again";
   color: #e74a3b;
   font-family: "Inter Tight";
   font-size: 14px;
