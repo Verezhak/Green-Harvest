@@ -1064,6 +1064,7 @@ img {
   letter-spacing: -0.36px;
   text-transform: uppercase;
   margin-bottom: 40px;
+  max-width: 269px;
 }
 .the-form {
   color: var(--green-background);
@@ -1074,7 +1075,7 @@ img {
 .form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 .input {
   width: 100%;
@@ -1107,10 +1108,11 @@ img {
   color: #141414;
 }
 
-.label {
+.span-form {
   position: relative;
+  display: flex;
 }
-.label::before {
+.span-form::before {
   position: absolute;
   top: 0;
   left: 16px;
@@ -1123,10 +1125,10 @@ img {
   line-height: 18px;
   display: none;
 }
-.input:valid ~ .label::before {
+.input:valid ~ .span-form::before {
   display: block;
 }
-.label::after {
+.span-form::after {
   position: absolute;
   left: 16px;
   content: "Invalid email, try again";
@@ -1139,13 +1141,11 @@ img {
   display: none;
   width: 180px;
 }
-.label {
-  display: flex;
-}
-.input:invalid ~ .label::after {
+
+.input:invalid ~ .span-form::after {
   display: block;
 }
-.input:placeholder-shown ~ .label::after {
+.input:placeholder-shown ~ .span-form::after {
   display: none;
 }
 .input:valid {
@@ -1270,6 +1270,9 @@ textarea:focus {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .form-title {
+    max-width: 428px;
   }
   .input,
   .textarea {
