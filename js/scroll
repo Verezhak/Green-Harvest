@@ -1,0 +1,30 @@
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const header = document.querySelector('.top');
+//     const sectionWork = document.querySelector('.section-work');
+    
+//     window.addEventListener('scroll', function() {
+//         if (window.scrollY >= sectionWork.offsetTop) {
+//             header.style.backgroundColor = '#576f35'; // Змінюємо фон хедера на зелений
+//             header.style.opacity = '1'; // Змінюємо прозорість хедера на повністю непрозору
+//         } else {
+//             header.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; // Прозорий фон хедера
+//             header.style.opacity = '0.8'; // Прозорість хедера
+//         }
+//     });
+// });
+
+//     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         const target = document.querySelector(this.getAttribute('href'));
+
+//         window.scrollTo({
+//             top: target.offsetTop,
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+

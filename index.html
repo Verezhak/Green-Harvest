@@ -19,7 +19,7 @@
   <body>
     <header class="top">
       <div class="header container">
-        <a class="logo-link" href="./index.html">
+        <a class="logo-link-header" href="./index.html">
           <svg class="logo-icon" width="16" height="16">
             <use href="./images/icons.svg#icon-logo.svg"></use>
           </svg>
@@ -172,13 +172,18 @@
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">eggplant</h3>
               <p class="vegetables-text">60 uah/kg</p>
+
               <img
                 srcset="./images/eggplant.png 1x, ./images/eggplant@2x.png 2x"
                 src="./images/eggplant.png"
                 alt="eggplant"
                 width="282"
-                heiht="243"
+                height="243"
               />
+              <p class="vegetables-overlay">
+                Eggplants contain antioxidants, fiber, and trace elements such
+                as potassium, magnesium, copper, and vitamin C.
+              </p>
             </li>
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">leek</h3>
@@ -188,8 +193,12 @@
                 src="./images/leek.png"
                 alt="leek"
                 width="282"
-                heiht="243"
+                height="243"
               />
+              <p class="vegetables-overlay">
+                Leek strengthens immunity, restores physical strength. It is
+                recommended as an antiseptic and antimicrobial agent.
+              </p>
             </li>
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">mushrooms</h3>
@@ -199,8 +208,12 @@
                 src="./images/mushrooms.png"
                 alt="mushrooms"
                 width="282"
-                heiht="243"
+                height="243"
               />
+              <p class="vegetables-overlay">
+                Mushrooms contain potassium, magnesium, phosphorus, linoleic
+                acid, and also replenish the body with protein.
+              </p>
             </li>
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">corn</h3>
@@ -210,19 +223,29 @@
                 src="./images/corn.png"
                 alt="corn"
                 width="282"
-                heiht="243"
+                height="243"
               />
+              <p class="vegetables-overlay">
+                Corn contains a lot of vitamins A and C, nicotinic acid,
+                potassium, calcium, sodium, phosphorus and magnesium.
+              </p>
             </li>
             <li class="vegetables-item">
-              <h3 class="vegetables-subtitle">sweet potatoes</h3>
-              <p class="vegetables-text">50 uah/kg</p>
-              <img
-                srcset="./images/potatoes.png 1x, ./images/potatoes@2x.png 2x"
-                src="./images/potatoes.png"
-                alt="potatoes"
-                width="282"
-                heiht="243"
-              />
+              <div class="item-overlay">
+                <h3 class="vegetables-subtitle">sweet potatoes</h3>
+                <p class="vegetables-text">50 uah/kg</p>
+                <img
+                  srcset="./images/potatoes.png 1x, ./images/potatoes@2x.png 2x"
+                  src="./images/potatoes.png"
+                  alt="potatoes"
+                  width="282"
+                  height="243"
+                />
+                <p class="vegetables-overlay">
+                  Sweet potatoes contain antioxidants, fiber and important
+                  micronutrients such as vitamins B6 and C.
+                </p>
+              </div>
             </li>
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">carrot</h3>
@@ -232,8 +255,12 @@
                 src="./images/carrot.png"
                 alt="carrot"
                 width="282"
-                heiht="243"
+                height="243"
               />
+              <p class="vegetables-overlay">
+                Carrots contain a lot of vitamin A, which takes care of the
+                condition of the mucous membranes and skin.
+              </p>
             </li>
           </ul>
         </div>
@@ -319,24 +346,27 @@
                       type="text"
                       name="username"
                       placeholder="Full Name"
-                  /></label>
-                  <label class="inp-wrp">
+                      pattern="^[A-Za-z]+ [A-Za-z]+$"
+                      required
+                    />
+                    <span class="label"></span>
+                  </label>
+                  <label>
                     <input
-                      class="input inp"
+                      class="input"
                       type="email"
                       name="email"
                       placeholder="Email"
                       pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                      required=""
+                      required
                     />
-                    <p class="text-valid">Succes!</p>
-                    <p class="text-invalid">Invalid email, try again</p>
+                    <span class="label"></span>
                   </label>
                   <label>
                     <textarea class="textarea" placeholder="Comment"></textarea>
                   </label>
+                  <button class="btn-form" type="submit">Send</button>
                 </form>
-                <button class="btn-form" type="submit">Send</button>
               </div>
               <div class="covered-soc-container">
                 <div class="con-img">
@@ -445,6 +475,7 @@
               <li>
                 <a
                   class="footer-add"
+                  target="_blank"
                   href="https://maps.app.goo.gl/GiQVn1s6yyVKMvyG9"
                   >1678 S. Pioneer Road Salt Lake City UT 84104</a
                 >
@@ -465,7 +496,7 @@
         <p class="footer-bottom-item"><span>&#xa9;</span>Green Harvest 2023</p>
       </div>
     </footer>
-    <!-- <script src="./js/task-1"></script> -->
+    <!-- <script src="./js/scroll"></script> -->
     <script src="./js/close.js"></script>
   </body>
 </html>
