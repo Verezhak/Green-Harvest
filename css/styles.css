@@ -340,6 +340,19 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+  .logo-link-header:hover .logo-icon,
+  .logo-link-header:hover .logo-text,
+  .logo-link-header:focus .logo-icon,
+  .logo-link-header:focus .logo-text {
+    fill: var(--red-background);
+  }
+  .logo-link-header:hover {
+    background-color: var(--light-text-color);
+    border-radius: 13px;
+  }
+  .logo-link-header {
+    padding: 12px;
+  }
   .btn-menu {
     display: none;
   }
@@ -1357,12 +1370,17 @@ textarea:focus {
   gap: 4px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-link:hover .logo-icon,
+/* .logo-link:hover .logo-icon,
+.logo-linr:hover .logo-text,
 .logo-link:focus .logo-icon,
-.logo-link:hover .logo-text,
 .logo-link:focus .logo-text {
-  fill: rgba(251, 251, 251, 0.3);
+  fill: var(--red-background);
 }
+.logo-link:hover {
+  background-color: var(--light-text-color);
+  border-radius: 13px;
+} */
+
 .logo-icon,
 .logo-text {
   fill: var(--light-text-color);
@@ -1398,10 +1416,19 @@ textarea:focus {
   text-transform: lowercase;
   transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-link:hover,
+/* .footer-link:hover,
 .footer-link:focus {
   font-size: 34px;
+} */
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--light-text-color);
+  color: var(--red-background);
+  padding: 0 5px;
+  border-radius: 12px;
 }
+
 .footer-address {
   max-width: 179px;
 }
@@ -1411,6 +1438,8 @@ textarea:focus {
   gap: 14px;
 }
 .footer-add {
+  display: flex;
+  padding: 0 5px;
   font-family: "Inter Tight", sans-serif;
   color: var(--light-text-color);
   font-size: 14px;
@@ -1420,11 +1449,20 @@ textarea:focus {
   letter-spacing: 0.01em;
   transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-add:hover,
 .footer-add:focus {
-  text-decoration: underline;
-  /* color: rgba(251, 251, 251, 0.3); */
+  background-color: var(--light-text-color);
+  color: var(--red-background);
+  padding: 0 5px;
+
+  border-radius: 12px;
 }
+
+/* .footer-add:hover,
+.footer-add:focus {
+  text-decoration: underline;
+ } */
 .footer-bottom-link,
 .footer-bottom-text {
   color: rgba(251, 251, 251, 0.5);
@@ -1514,7 +1552,10 @@ textarea:focus {
 @media screen and (min-width: 1280px) {
   .nav-add {
     flex-direction: row;
-    gap: 121px;
+    /* gap: 121px; */
+    gap: unset;
     margin-bottom: 125px;
+    justify-content: space-between;
+    width: 513px;
   }
 }
