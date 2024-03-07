@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
     menuMobile.classList.remove('is-open');
     backdrop.classList.remove('is-open');
   });
-    
-    
       const header = document.querySelector('.top');
     const sectionWork = document.querySelector('.section-work');
 
