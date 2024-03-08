@@ -120,10 +120,10 @@ img {
   stroke: var(--light-text-color);
 }
 
-.btn-menu:hover .icon-burger,
+/* .btn-menu:hover .icon-burger,
 .btn-menu:focus .icon-burger {
-  stroke: rgb(13, 80, 32);
-}
+  stroke: #425528;
+} */
 
 .nav-container {
   display: none;
@@ -718,7 +718,7 @@ img {
 .discount-span::before {
   content: "";
   position: absolute;
-  background-color: #576f35;
+  background-color: var(--green-background);
   border-radius: 12px;
   width: 355px;
   height: 102px;
@@ -1180,7 +1180,7 @@ textarea:focus {
 }
 .btn-form:hover,
 .btn-form:focus {
-  background-color: rgb(13, 80, 32);
+  background-color: #425528;
 }
 .covered-soc-container {
   display: flex;
@@ -1226,7 +1226,7 @@ textarea:focus {
 }
 .soc-link:hover,
 .soc-link:focus {
-  color: rgb(13, 80, 32);
+  color: #425528;
 }
 .con-img {
   position: relative;
@@ -1389,7 +1389,7 @@ textarea:focus {
   line-height: 1;
   letter-spacing: 0.02em;
   text-transform: lowercase;
-  padding: 0 5px;
+  padding: 5px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1411,7 +1411,7 @@ textarea:focus {
 }
 .footer-add {
   display: flex;
-  padding: 0 5px;
+  padding: 5px;
   font-family: "Inter Tight", sans-serif;
   color: var(--light-text-color);
   font-size: 14px;
