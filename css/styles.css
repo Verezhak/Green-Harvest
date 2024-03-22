@@ -1205,8 +1205,7 @@ textarea:focus {
 }
 .soc-list {
   display: flex;
-  max-width: 295px;
-  gap: 12px;
+   gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -1219,14 +1218,15 @@ textarea:focus {
   font-weight: 600;
   line-height: 1.08;
   letter-spacing: -0.36px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding:0 5px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-link-span {
-  margin-left: 12px;
-}
+
 .soc-link:hover,
 .soc-link:focus {
-  color: #425528;
+  color: var(--green-background);
+  background-color: var(--light-text-color);
+  border-radius: 12px;
 }
 .con-img {
   position: relative;
@@ -1302,7 +1302,7 @@ textarea:focus {
   }
   .soc-list {
     flex-wrap: nowrap;
-    width: 100%;
+   
   }
   .btn-form {
     margin-top: 25px;
