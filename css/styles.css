@@ -853,7 +853,7 @@ img {
 }
 .vegetables-item:hover .vegetables-overlay {
   transform: translatey(0);
-  border: 5px solid var(--green-background);
+  border: 1px solid var(--green-background);
 }
 .vegetables-item:hover {
   transform: scale(1.1);
